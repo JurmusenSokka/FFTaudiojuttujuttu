@@ -6,4 +6,6 @@ This is some nonsense.
 """
 from scipy.io import wavfile as wf
 
-wf.read('po33juu.wav')
+r, a = wf.read('po33juu.wav')
+print(a.shape)
+print(r)
